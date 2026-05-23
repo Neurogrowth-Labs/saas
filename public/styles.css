@@ -1,0 +1,17 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #101114; color: #e6e7ea; }
+.layout { display: grid; grid-template-columns: 300px 1fr; height: 100vh; }
+.sidebar { border-right: 1px solid #2a2d33; padding: 16px; background: #15181e; }
+.search, .composer input { width: 100%; background:#1d2129; border:1px solid #2b303a; color:#fff; padding:10px; border-radius:8px; margin-bottom:10px; }
+.sidebar h3 { margin: 12px 0 8px; font-size: 14px; color: #8f96a4; }
+.sidebar ul { list-style:none; padding:0; margin:0 0 8px; }
+.sidebar li { padding:8px; border-radius:8px; cursor:pointer; }
+.sidebar li.active { background:#273144; }
+.chat-panel { display:flex; flex-direction:column; }
+header { display:flex; justify-content:space-between; padding:16px; border-bottom:1px solid #2a2d33; }
+.messages { padding:16px; overflow:auto; flex:1; }
+.msg { margin-bottom:14px; background:#191d24; border:1px solid #2f3440; padding:12px; border-radius:10px; }
+.meta { font-size:12px; color:#9ca3b2; margin-bottom:6px; display:flex; gap:8px; }
+.badge { margin-top:6px; color:#ff8f8f; font-size:12px; font-weight:bold; }
+.attachment { margin-top:6px; color:#a6c8ff; font-size:12px; }
+.composer { padding:12px; border-top:1px solid #2a2d33; display:grid; grid-template-columns: 180px 1fr 100px; gap:8px; }
+button { background:#3a74ff; border:none; border-radius:8px; color:#fff; }

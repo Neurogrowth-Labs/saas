@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neuro Ops Finance Messaging</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <input id="chatSearch" class="search" placeholder="Search chats..." />
+      <h3>Channels</h3>
+      <ul id="channels"></ul>
+      <h3>Direct Messages</h3>
+      <ul id="directMessages"></ul>
+    </aside>
+
+    <main class="chat-panel">
+      <header><h2 id="chatTitle">finance-team</h2><span>AI Insights</span></header>
+      <section id="messages" class="messages"></section>
+      <form id="composer" class="composer">
+        <input id="sender" value="Alice Finance" />
+        <input id="messageText" placeholder="Type message" required />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
