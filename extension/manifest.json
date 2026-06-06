@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "AfriLingua Realtime Translator",
+  "version": "0.1.0",
+  "description": "Translate selected text in WhatsApp Web, Telegram Web, Messenger, Instagram DMs, and any website.",
+  "permissions": ["storage", "contextMenus", "activeTab", "scripting"],
+  "host_permissions": ["http://localhost:8000/*", "https://*/*"],
+  "background": { "service_worker": "src/background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*", "https://web.telegram.org/*", "https://www.messenger.com/*", "https://www.instagram.com/*", "https://*/*"],
+      "js": ["src/content.js"],
+      "css": ["src/overlay.css"]
+    }
+  ],
+  "action": { "default_popup": "src/popup.html" }
+}

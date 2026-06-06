@@ -1,0 +1,4 @@
+#afrilingua-overlay { position: fixed; right: 18px; bottom: 18px; z-index: 2147483647; width: min(360px, calc(100vw - 36px)); background: #102018; color: white; border-radius: 18px; padding: 18px; box-shadow: 0 20px 60px rgba(0,0,0,.25); font-family: Inter, system-ui, sans-serif; }
+#afrilingua-overlay button { float: right; border: 0; border-radius: 999px; width: 28px; height: 28px; cursor: pointer; }
+#afrilingua-overlay p { color: white; line-height: 1.5; }
+#afrilingua-overlay small { color: #a7f3d0; }

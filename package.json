@@ -1,0 +1,11 @@
+{
+  "name": "afrilingua-ai-platform",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["frontend"],
+  "scripts": {
+    "dev:backend": "uvicorn app.main:app --app-dir backend --reload",
+    "dev:frontend": "npm --workspace frontend run dev",
+    "test:backend": "pytest"
+  }
+}
